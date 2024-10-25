@@ -13,7 +13,7 @@ def generate_command(command_number):
     #The program picks a random number from 1 to 10. If the number's even, the name or the instruction will change. 
     #There's always a 50% chance that the command will change it's name or action. 
     if (random.randint(1,10)%2==0):
-        if command_number==0 and random.randint(1,10)%2==0:
+        if command_number==0:
             #This is exclusive for the first instruction. It follows the same rule as before.
             #For this instruction, the names can be substituted with the word 'Firstly'. 
             if (random.randint(1,10)%2==0): name = "Firstly,"
