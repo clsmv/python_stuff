@@ -37,7 +37,7 @@ def simon_says():
     acum = 0
     #This program will randomly iterate from 2 to 6 times.
     for i in range (0,random.randint(1,5)):
-        #A random number from 1 to 10 is generated and the concatenated to the first part of the command.
+        #A random number from 1 to 10 is generated and concatenated to the first part of the command.
         number = random.randint(1,10)
         command = generate_command(i) + ' ' + str(number)
         print(command)
