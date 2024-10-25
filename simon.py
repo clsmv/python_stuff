@@ -35,7 +35,7 @@ def generate_command(command_number):
 def simon_says():
     #the acum variable will store the result of the operations. 
     acum = 0
-    #This program will randomly iterate from 2 to 6 times.
+    #This program will randomly iterate from 1 to 5 times.
     for i in range (0,random.randint(1,5)):
         #A random number from 1 to 10 is generated and concatenated to the first part of the command.
         number = random.randint(1,10)
