@@ -25,5 +25,5 @@ def num_to_english(num):
     else: return "zero"
 
 def main():
-    print(num_to_english(10000))
+    print(num_to_english(120))
 main()
