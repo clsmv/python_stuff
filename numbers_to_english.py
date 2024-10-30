@@ -7,7 +7,7 @@ def get_tens(ten):
     teen_list=["eleven","twelve","thirteen","fourteen",'fifteen']
     ten_list=["ten","twenty","thirty","forty","fifty","sixty","seventy","eighty","ninety"]
     if (ten>=11 and ten<=15): return teen_list[ten-11]
-    elif (ten>=14 and ten<=19): return get_units(int(str(ten)[1]))+"teen"
+    elif (ten>=16 and ten<=19): return get_units(int(str(ten)[1]))+"teen"
     else:
         if str(ten)[1]=='0': return ten_list[int(str(ten)[0])-1]
         else: return ten_list[int(str(ten)[0])-1] + ' ' + get_units(int(str(ten)[1]))
