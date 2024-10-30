@@ -21,8 +21,9 @@ def num_to_english(num):
         if len(str(num)) == 1: return get_units(num)
         elif len(str(num)) == 2: return get_tens(num)
         elif len(str(num)) == 3: return get_hundreds(num)
+        else: return "N/A"
     else: return "zero"
 
 def main():
-    print(num_to_english(333))
+    print(num_to_english(10000))
 main()
