@@ -1,9 +1,10 @@
 def keyboard_shortcut(text):
     clipboard, copied_text, i = [], '', 0
+    words = text.split()
     while i < len(text.split()):
-        current_word = text.split()[i]
-        if i != len(text.split())-1 and ''.join(text.split()[i:i+3]) == "Ctrl+C" or ''.join(text.split()[i:i+3]) == "Ctrl+V":
-            command = ''.join(text.split()[i:i+3])
+        current_word = words[i]
+        if i != len(words)-1 and ''.join(words[i:i+3]) == "Ctrl+C" or ''.join(words[i:i+3]) == "Ctrl+V":
+            command = ''.join(words[i:i+3])
             if command == "Ctrl+C": 
                 copied_text = ' '.join(clipboard)
             elif command == "Ctrl+V": 
