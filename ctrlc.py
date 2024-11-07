@@ -15,8 +15,12 @@ def keyboard_shortcut(text):
     return ' '.join(clipboard)
 
 def main():
-    text = "The Ctrl + C Ctrl + V Town Ctrl + C Ctrl + V"
-    print(keyboard_shortcut(text))
+    text1 = "the egg and Ctrl + C Ctrl + V the spoon"
+    text2 = "WARNING Ctrl + V Ctrl + C Ctrl + V"
+    text3 = "The Ctrl + C Ctrl + V Town Ctrl + C Ctrl + V"
+    print(keyboard_shortcut(text1)) # "the egg and the egg and the spoon"
+    print(keyboard_shortcut(text2)) # "WARNING WARNING"
+    print(keyboard_shortcut(text3)) # "The The Town The The Town"
 
 if __name__ == "__main__":
     main()
