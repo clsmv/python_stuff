@@ -25,5 +25,6 @@ def num_to_english(num):
     else: return "zero"
 
 def main():
-    print(num_to_english(120))
+    for i in range(1000):
+        print(i,'=',num_to_english(i))
 main()
