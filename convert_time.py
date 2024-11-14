@@ -7,7 +7,9 @@ def convert_time(time):
             if meridien == "pm": return "12:00"
             else: return "0:00"
         else:
-            return str(int(hour)+12) + ':' + minutes
+            if meridien == "pm":
+                return str(int(hour)+12) + ':' + minutes
+            return hour + ':' + minutes
     else:
         if hour == '0': hour = '12'
         elif hour == '12': hour = '24'
@@ -17,5 +19,5 @@ def convert_time(time):
             return hour + ':' + minutes + ' am'
 
 def main():
-    print(convert_time("7:03 pm"))
+    print(convert_time("5:22 pm"))
 main()
