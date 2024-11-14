@@ -15,9 +15,14 @@ def convert_time(time):
         elif hour == '12': hour = '24'
         if int(hour) > 12:
             return str(int(hour)-12) + ':' + minutes + ' pm'
-        else: 
-            return hour + ':' + minutes + ' am'
+        return hour + ':' + minutes + ' am'
 
 def main():
-    print(convert_time("5:22 pm"))
+    print(convert_time("12:00 am")) # "0:00"
+    print(convert_time("12:00 pm")) # "12:00"
+    print(convert_time("6:20 pm")) # "18:20"
+    print(convert_time("12:00")) # "12:00 pm"
+    print(convert_time("00:00")) # "12:00 am"
+    print(convert_time("21:00")) # "9:00 pm"
+    print(convert_time("5:05")) # "5:05 am"
 main()
